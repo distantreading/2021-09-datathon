@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="file:/home/lou/Public/TEIslides/teislides.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+ <teiHeader>
+  <fileDesc>
+   <titleStmt>
+    <title>Useful Links</title>
+    <author>Lou Burnard Consulting</author>
+   </titleStmt>
+   <publicationStmt>
+    <p>Unpublished draft</p>
+   </publicationStmt>
+   <sourceDesc>
+    <p>Born digital</p>
+   </sourceDesc>
+  </fileDesc>
+ </teiHeader>
+ <text>
+  <body>
+   <div type="slide">
+    <head>ELTeC Reference documentation</head>
+    <list>
+     <label>Reminders</label>
+     <item><list>
+      <item><ref target="https://distantreading.github.io/Training/Budapest/encodingGuide-1.html"
+       >Encoding for ELTeC : a summary guide / Part 1 : the Header</ref></item>
+      <item> <ref target="https://distantreading.github.io/Training/Budapest/encodingGuide-2.html"
+       >Encoding for ELTeC : a summary guide / Part 2 : the Text</ref></item>
+      </list></item>
+     <label>Full manuals</label>
+     <item><list>
+      <item><ref target="https://distantreading.github.io/Schema/eltec-1.html">Encoding Guidelines
+       for the ELTeC: level 1</ref></item>
+      <item> <ref target="https://distantreading.github.io/Schema/eltec-2.html">Encoding Guidelines
+       for the ELTeC: level 2</ref></item>
+      </list> </item>
+    </list>
+   </div>
+  </body>
+ </text>
+</TEI>

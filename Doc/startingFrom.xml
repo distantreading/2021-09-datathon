@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="file:/home/lou/Public/TEIslides/teislides.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+ <teiHeader>
+  <fileDesc>
+   <titleStmt>
+    <title>Starting from... </title>
+    <author>Lou Burnard Consulting</author>
+   </titleStmt>
+   <publicationStmt><p>Unpublished draft</p></publicationStmt>
+   <sourceDesc><p>Born digital</p></sourceDesc>
+  </fileDesc>
+ </teiHeader>
+ <text>
+  <body>
+   <div type="slide">
+    <head>PDF of page images</head>
+    <list><item>First unpack the PDF using e.g.
+   <code>pdftohtml myPDF.pdf</code>. This will (rather slowly) produce lots of graphic files, one per page. Put them all in a folder together.</item><item>Use tesseract to do OCR on each page e.g. like this
+    <eg>cd myPDF-folder; 
+     for f in *.png ; do tesseract $f `basename $f .png` -l XXX; done
+    </eg> replacing XXX with the ISO 3 letter code for your language (e.g. bos for Bosnian)</item></list>
+  </div><div type="slide"><head>Plain text</head>
+  <list><item>First check for characters which will upset the XML processor. Ampersands must be changed to <code>&amp;amp</code> first; and pointy brackets to <code>&amp;lt;</code>. All characters should be in Unicode.
+   </item>
+    <item>Make the document well formed by wrap the whole thing in a single div type=”chapter” containing one monster paragraph
+   </item><item>break up individual paragraphs by adding <code>&lt;/p>&lt;p></code> at the start of each new one</item><item>
+    break up into multiple divs by adding &lt;/div>&lt;div type=”chapter”> at the start of each new one</item>
+</list>    
+<p>In most cases, you should be able to use the oXygen find-and-replace command to fix up a lot of the text.
+ For example, 
+   <table><row role="label"><cell>If you have...</cell><cell>regexp find and replace</cell><cell>effect</cell></row><row><cell> blank lines between paragraphs</cell><cell><graphic url="media/regexp-1.png"/> </cell><cell>will introduce <gi>p</gi> tags in the right place</cell></row>
+    <row>
+    <cell>tags like this <code>&lt;L 42></code> at the start of each new page</cell><cell><graphic url="media/regexp-2.png"/> </cell><cell>will  replace them with appropriate <gi>lb</gi> tags. </cell></row></table></p></div></body>
+ </text>
+</TEI>
