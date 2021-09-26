@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Getting started with GitHub</title>
+            <author>
+               <name>Martina Scholger</name>
+               <affiliation>Centre for Information Modelling - Austrian Centre for Digital
+                  Humanities, University of Graz</affiliation>
+            </author>
+
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Prepared for Datathon</p>
+         </sourceDesc>
+
+      </fileDesc>
+      <revisionDesc>
+         <change when="2021-09-26">MS first draft</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+
+         <div type="slide">
+            <head>What is GitHub?</head>
+            <figure>
+               <graphic width="700px" url="media/GitHub-Logo.png"></graphic>
+            </figure>
+            <p>GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.</p>
+         </div>
+
+
+         <div type="slide">
+            <div>
+            <head>Step 1: Create a GitHub account</head>
+            <list>
+               <item><ref target="https://github.com/">https://github.com/</ref></item>
+            </list>
+            </div>
+            <div>
+               <head>Step 2: Install GitHub</head>
+               <list>
+                  <item><ref target="https://github.com/">https://git-scm.com/downloads</ref></item>
+                  <item>2a. Commandline</item>
+                  <item>2b. GUI Client, e.g. GitHub Desktop <ref target="https://github.com/">https://desktop.github.com/</ref></item>
+               </list>
+            </div>            
+         </div>
+         
+         
+         <div type="slide">
+            
+            <head>Step 2a: Use GitHub on the Commandline</head>
+           
+           <list>
+              <item>Configure your username and email
+              <list>
+                 <item><code>git config --global user.name "Martina Scholger"</code></item>
+                 <item><code>git config --global user.name "Martina Scholger"</code></item>
+              </list>
+              </item>
+              <item>Open datathon repository on GitHub and clone it
+               <list>
+                  <item><ref target="https://github.com/distantreading/2021-09-datathon">https://github.com/distantreading/2021-09-datathon</ref></item>
+                  <item><code>git clone https://github.com/distantreading/2021-09-datathon.git</code></item>
+               </list>
+                 <figure>
+                    <graphic url="media/github-datathon.png"></graphic>
+                 </figure>
+              
+              </item>
+              
+           </list>
+           
+        
+         </div>
+         
+         <div type="slide">
+            
+            <head>Step 2a: Use GitHub on the Commandline</head>
+            
+            <list>
+               <item>
+                  Add your file to the repository
+                  <list>
+                     <item>
+                        Update the local version of a repository from a remote repository<lb /> 
+                        <code>git pull origin main</code>
+                     </item>
+                     <item>
+                        Checking the status of the repository<lb />
+                        <code>git status</code>
+                     </item>
+                     <item>
+                        Save your file to the folder <code>Work/Texts/</code>
+                     </item>
+                     <item>
+                        Add your file to the git staging area<lb /> 
+                        <code>git add mytext.xml</code>
+                     </item>
+                     <item>
+                        Provide a commit message<lb />
+                        <code>git commit -m "My first commit"</code>
+                     </item>
+                     <item>
+                        Pushing commits to a remote repository<lb />
+                        <code>git push origin main</code>
+                     </item>
+                  </list>
+               </item>
+            </list>
+         </div>
+         
+         <div type="slide">
+            
+            <head>Step 2b: GUI Client fo GitHub</head>
+            
+            
+            <list style="clear:both">
+               <item>
+                  Install <title>GitHub Desktop</title>
+               </item>
+               <item>
+                  <code>File > Clone respository</code>
+                  <figure>
+                     <graphic url="media/clone.png"></graphic>
+                  </figure>
+               </item>
+               <item>
+                  Save your file to the folder <code>Work/Texts/</code>
+               </item>
+               <item>
+                  Make sure your local repository is up to date<lb />
+                  <code>Fetch origin</code>
+               </item>
+               <item>
+                  Provide a summary and "Commit to main"
+               </item>
+               <item>
+                  Push local changes to remote
+               </item>
+               
+               
+               
+               
+           
+            </list>
+            <figure>
+               <graphic url="media/github-desktop.png"></graphic>
+            </figure>
+         </div>
+         
+         <div type="slide">
+            <head>ELTeC on GitHub</head>
+            <list>
+               <item><ref target="https://github.com/COST-ELTeC">https://github.com/COST-ELTeC</ref></item>
+               <item>Choose your language collection</item>
+               <item>Clone repository</item>
+            </list>
+            
+            <figure>
+               <graphic url="media/eltec-github.png" width="50%"></graphic>
+            </figure>
+         </div>
+         
+
+         <div type="slide">
+            <head>GitHub documentation</head>
+            <p><ref target="http://git-scm.com/documentation">http://git-scm.com/documentation</ref></p>
+         </div>
+
+         
+
+      </body>
+   </text>
+</TEI>
