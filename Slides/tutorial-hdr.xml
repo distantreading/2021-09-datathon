@@ -18,24 +18,21 @@
      <div type="slide">
          <p>This tutorial shows you how to create an ELTeC level zero file, and how to complete the
         metadata required by the TEI Header. </p>
-     <p>If you haven't done so already, download <ref target="work.zip">the working files for this tutorial</ref>,
-         unpack them into a folder somewhere on your machine, and then open the <ident>ELTeC.xpr</ident> project
-         file in oXygen (choose Project->Open project from the menu, or hit CTRL-F2).
-     </p>
-     
-     </div>
+      <p>If you haven't done so already, download a local copy of <ref target="https://github.com/distantreading/2021-09-datathon.git">the Github repository for this workshop</ref>. 
+       It contains a folder called 
+       <ident>Work</ident> which contains all the working files you will need for this tutorial: to access them, just
+       open the <ident>ELTeC.xpr</ident> project
+       file in oXygen (choose Project->Open project from the menu, or hit CTRL-F2).
+      </p>
+       </div>
       <div type="slide"> <head>Getting started</head> <list>
                      <item>Open oXygen and click on the New icon (first left on the toolbar); or
                 select File->New from the menu; or type CTRL-N</item>
-            <item>The New File dialogue appears. Under the heading <ident>Mew Document</ident>, choose <ident>XML Document</ident> and press <ident>Customize</ident>. Select which schema (eltec-0 or eltec-1) file you want to use: we suggest <ident>eltec-0</ident>. 
-             <!--Under the heading <ident>Global
+           <!-- <item>The New File dialogue appears. Under the heading <ident>Mew Document</ident>, choose <ident>XML Document</ident> and press <ident>Customize</ident>. Select which schema (eltec-0 or eltec-1) file you want to use: we suggest <ident>eltec-0</ident>. -->
+             <item>Under the heading <ident>Global
                 templates</ident>, you should see the template for ELTeC-0. Select it.
-                (If it's not there, you need to tweak your installation of oXygen; or you
-                can simply  Open the  file <ident>ELTeC-0.xml</ident> in your Work
-                directory.--> </item><!--<item>Change the filename in the bottom of the window from
-                    <ident>Untitled.xml</ident> or <ident>ELTeC-0</ident> to something more
-                    appropriate: we suggest using the identifier for the file you're planning to
-                    work on. Either way...</item>-->
+                If it's not there, you need to tweak your installation of oXygen by copying the files <ident>ELTeC-0.xml</ident> and <ident>ELTeC-0.properties</ident> from your <ident>Work</ident> folder into the oXygen <ident>templates</ident> folder. Alternatively, you
+                can simply  open the  file <ident>ELTeC-0.xml</ident>. Either way ...</item>
             <item>... the main oXygen editing window opens, with the beginnings of an ELTeC
                 XML file in it. Note the following: <list>
                     <item>At the top of the file there are two purple lines beginning
@@ -58,7 +55,7 @@
         <div type="slide">
             <head>Making the header valid</head>
             <list>
-                <item>The schema requires a proper value for @xml:id but we have not yet
+                <item>The schema requires a value for @xml:id but we have not yet
                     supplied one. Put the cursor between the quote marks and type in the
                     identifier for your novel<!--, e.g. <code>POL002</code> if you've chosen to work
                     on <ident>beczkowska_bedzie_1897.txt</ident>-->. A new error message appears!
@@ -119,7 +116,7 @@
                     of first publication. </item>
             </list>
             <p>When you're happy with your header, and it has no redlines, remember to save the file
-                before proceeding to add something to the <gi>body</gi> element!
+                in the Texts folder, before proceeding to add something to the <gi>body</gi> element!
             </p>
         </div>
     </body></text>

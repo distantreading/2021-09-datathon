@@ -42,7 +42,7 @@
         </revisionDesc>
     </teiHeader>
     <text>
-        <body><div type="chapter">
+        <body><div type="chapter" >
            <p>A very short book</p></div>
         </body>
     </text>
