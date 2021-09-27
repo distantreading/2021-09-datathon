@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../eltec-0.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../eltec-0.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENG2021" xml:lang="EN">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Title</title>
+                <author>Someone, Louisa ()<!-- Surname, Forenames (born-died)--></author>
+                <respStmt>
+                    <resp>encoded by Me & You</resp>
+                    <name>Your Name Here</name>
+                </respStmt>
+            </titleStmt>
+            <extent>
+                <Measure unit="words">1</Measure>
+            </extent>
+            <publicationStmt>
+                <p>Publication Information
+            </publicationStmt>
+            <sourceDesc>
+              Not much to say here
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc n="eltec-0">
+            <p/>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident=""/>
+            </langUsage>
+            <textDesc>
+                <authorGender xmlns="http://distantreading.net/eltec/ns" key="Y"/>
+                <size key="short"></size>
+                <reprintCount xmlns="http://distantreading.net/eltec/ns" key="unspecified"/>
+                <timeSlot xmlns="http://distantreading.net/eltec/ns" key="T1"/>
+            </textDesc>
+        </profileDesc>
+        <revisionDesc>
+            <change when="12 Nov">File created</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body><div type="chapter" >
+           <p>A very short book with a nested section</p>
+        <div type="subsection"><p>Pity the schema won't allow it</p></div>
+         <div type="chapter"><p>Nor this</p></div>
+        </div>
+        </body>
+    </text>
+</TEI>
